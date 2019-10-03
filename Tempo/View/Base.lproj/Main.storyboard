@@ -343,5 +343,79 @@
             </objects>
             <point key="canvasLocation" x="2841" y="48"/>
         </scene>
+        <!--Usuario View Controller-->
+        <scene sceneID="VId-mT-eUo">
+            <objects>
+                <viewController id="A7G-X0-4nG" customClass="UsuarioViewController" customModule="MeuTempo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3JO-Y4-eeW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil" translatesAutoresizingMaskIntoConstraints="NO" id="NCR-9U-rAK">
+                                <rect key="frame" x="0.0" y="63" width="375" height="213"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJd-C0-Mh0">
+                                <rect key="frame" x="77.5" y="291" width="220" height="38"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="MEZ-33-RXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Marcação de Ponto">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoMarcacaoPonto:" destination="A7G-X0-4nG" eventType="touchUpInside" id="skh-k4-4od"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSl-89-Q6F">
+                                <rect key="frame" x="77.5" y="329" width="220" height="38"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="FWf-5U-VSs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Sair">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoSair:" destination="A7G-X0-4nG" eventType="touchUpInside" id="O3E-iW-gv8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Funcionário" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7W-bB-qKW">
+                                <rect key="frame" x="73" y="20" width="229.5" height="28"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cSl-89-Q6F" firstAttribute="top" secondItem="WJd-C0-Mh0" secondAttribute="bottom" id="6Up-kR-0ob"/>
+                            <constraint firstItem="NCR-9U-rAK" firstAttribute="top" secondItem="Z7W-bB-qKW" secondAttribute="bottom" constant="15" id="Hof-7w-x6e"/>
+                            <constraint firstItem="WJd-C0-Mh0" firstAttribute="centerX" secondItem="3JO-Y4-eeW" secondAttribute="centerX" id="Y4v-mN-ZGb"/>
+                            <constraint firstItem="Z7W-bB-qKW" firstAttribute="top" secondItem="m8b-LK-eie" secondAttribute="top" constant="20" id="hJ2-7v-c7L"/>
+                            <constraint firstItem="NCR-9U-rAK" firstAttribute="leading" secondItem="m8b-LK-eie" secondAttribute="leading" id="jJk-QG-6gi"/>
+                            <constraint firstItem="m8b-LK-eie" firstAttribute="trailing" secondItem="NCR-9U-rAK" secondAttribute="trailing" id="qov-BQ-try"/>
+                            <constraint firstItem="Z7W-bB-qKW" firstAttribute="centerX" secondItem="3JO-Y4-eeW" secondAttribute="centerX" id="vJb-Nb-tg3"/>
+                            <constraint firstItem="WJd-C0-Mh0" firstAttribute="top" secondItem="NCR-9U-rAK" secondAttribute="bottom" constant="15" id="vrI-jW-AIU"/>
+                            <constraint firstItem="cSl-89-Q6F" firstAttribute="centerX" secondItem="3JO-Y4-eeW" secondAttribute="centerX" id="y0y-Ze-lNQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m8b-LK-eie"/>
+                    </view>
+                    <connections>
+                        <outlet property="fotoUsuario" destination="NCR-9U-rAK" id="FTh-gC-u6N"/>
+                        <outlet property="marcacaoPontoBotao" destination="WJd-C0-Mh0" id="4g1-yi-Smu"/>
+                        <outlet property="nomeUsuario" destination="Z7W-bB-qKW" id="AYa-iB-smr"/>
+                        <outlet property="sairBotao" destination="cSl-89-Q6F" id="hsD-2q-SZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAq-TY-Uio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2812" y="708.39580209895053"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="perfil" width="320" height="213"/>
+    </resources>
 </document>
