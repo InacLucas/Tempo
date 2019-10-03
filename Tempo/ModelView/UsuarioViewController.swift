@@ -10,21 +10,23 @@ import UIKit
 
 class UsuarioViewController: UIViewController {
 
+    @IBOutlet var nomeFuncionario: UILabel!
+    @IBOutlet var imagemFuncionario: UIImageView!
+    @IBOutlet var outletBotaoMarcacaoPonto: UIButton!
+    @IBOutlet var outletBotaoSair: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func actionBotaoMarcacaoPonto(_ sender: Any) {
+         // Código.
     }
-    */
+    
+    @IBAction func actionBotaoSair(_ sender: Any) {
+         // Código.
+    }
 
 }
