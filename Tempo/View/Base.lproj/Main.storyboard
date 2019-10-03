@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="1415.9420289855072" y="409.82142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadatro View Controller-->
         <scene sceneID="k2c-aR-PmH">
             <objects>
-                <viewController id="xe1-fU-cLq" sceneMemberID="viewController">
+                <viewController id="xe1-fU-cLq" customClass="CadatroViewController" customModule="Tempo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ccg-Ng-FAB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,6 @@
                                 <rect key="frame" x="132.5" y="316" width="110" height="38"/>
                                 <color key="backgroundColor" red="0.59173014400000001" green="0.69828773109999998" blue="0.31200856170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="QtL-zS-wGo"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="dop-Me-iYg"/>
                                     <constraint firstAttribute="height" constant="38" id="egM-gf-MIk"/>
                                 </constraints>
@@ -125,12 +124,14 @@
                                 <state key="normal" title="Cadastrar">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionBotaoCadastrar:" destination="xe1-fU-cLq" eventType="touchUpInside" id="2Gp-Ow-l51"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1bw-vh-c3B">
                                 <rect key="frame" x="20" y="257" width="335" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="VzK-U8-xI8"/>
-                                    <constraint firstAttribute="height" constant="34" id="XIf-Uw-fbQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -138,8 +139,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7P-ha-U8U">
                                 <rect key="frame" x="20" y="217.5" width="335" height="24.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="Dr6-mL-irW"/>
-                                    <constraint firstAttribute="height" constant="24.5" id="ZVR-OZ-Df6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="Dr6-mL-irW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,7 +149,6 @@
                                 <rect key="frame" x="20" y="158.5" width="335" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="drE-eX-MpI"/>
-                                    <constraint firstAttribute="height" constant="34" id="pKX-qV-ieu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -157,8 +156,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Identificador: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dz4-X2-LQk">
                                 <rect key="frame" x="20" y="118.5" width="335" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="amw-SA-z1r"/>
-                                    <constraint firstAttribute="width" constant="335" id="mJf-9L-8lb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="mJf-9L-8lb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,7 +166,6 @@
                                 <rect key="frame" x="20" y="59.5" width="335" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="3GM-4W-JT7"/>
-                                    <constraint firstAttribute="height" constant="34" id="RhZ-RC-cdG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -176,8 +173,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funcionário:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzd-YB-dEH">
                                 <rect key="frame" x="20" y="20" width="335" height="24.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="Y4C-Mx-3ff"/>
-                                    <constraint firstAttribute="height" constant="24.5" id="iw9-fp-ITP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="Y4C-Mx-3ff"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -203,6 +199,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X1g-bm-3VA"/>
                     </view>
+                    <connections>
+                        <outlet property="campoIdentificador" destination="ae8-lH-U33" id="Pq7-d7-0nO"/>
+                        <outlet property="campoNomeFuncionario" destination="60L-1t-PpI" id="WPs-mS-ao6"/>
+                        <outlet property="campoSenha" destination="1bw-vh-c3B" id="URF-F9-nyr"/>
+                        <outlet property="outletBotaoCadastrar" destination="gNz-eM-B2k" id="ZMa-9Y-hI7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSo-fm-iQb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,6 +355,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil" translatesAutoresizingMaskIntoConstraints="NO" id="NCR-9U-rAK">
                                 <rect key="frame" x="0.0" y="63" width="375" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="TrE-kC-cMZ"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJd-C0-Mh0">
                                 <rect key="frame" x="77.5" y="291" width="220" height="38"/>
@@ -365,6 +370,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="actionBotaoMarcacaoPonto:" destination="A7G-X0-4nG" eventType="touchUpInside" id="q90-Xt-gcm"/>
                                     <action selector="botaoMarcacaoPonto:" destination="A7G-X0-4nG" eventType="touchUpInside" id="skh-k4-4od"/>
                                 </connections>
                             </button>
@@ -379,6 +385,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="actionBotaoSair:" destination="A7G-X0-4nG" eventType="touchUpInside" id="ojm-pb-8fO"/>
                                     <action selector="botaoSair:" destination="A7G-X0-4nG" eventType="touchUpInside" id="O3E-iW-gv8"/>
                                 </connections>
                             </button>
@@ -405,8 +412,12 @@
                     </view>
                     <connections>
                         <outlet property="fotoUsuario" destination="NCR-9U-rAK" id="FTh-gC-u6N"/>
+                        <outlet property="imagemFuncionario" destination="NCR-9U-rAK" id="ThD-Gy-JFb"/>
                         <outlet property="marcacaoPontoBotao" destination="WJd-C0-Mh0" id="4g1-yi-Smu"/>
+                        <outlet property="nomeFuncionario" destination="Z7W-bB-qKW" id="D6h-ba-Xai"/>
                         <outlet property="nomeUsuario" destination="Z7W-bB-qKW" id="AYa-iB-smr"/>
+                        <outlet property="outletBotaoMarcacaoPonto" destination="WJd-C0-Mh0" id="h3p-Rc-Pkb"/>
+                        <outlet property="outletBotaoSair" destination="cSl-89-Q6F" id="WEv-tn-hsq"/>
                         <outlet property="sairBotao" destination="cSl-89-Q6F" id="hsD-2q-SZy"/>
                     </connections>
                 </viewController>
