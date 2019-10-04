@@ -18,6 +18,7 @@
 		81560BC22342911D0056F5E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81560BC12342911D0056F5E7 /* LoginViewController.swift */; };
 		81675630234392E6006F1249 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8167562F234392E5006F1249 /* CollectionViewCell.swift */; };
 		81675632234393FB006F1249 /* CalendarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81675631234393FB006F1249 /* CalendarioViewController.swift */; };
+		81707FC523477667008FE93F /* DiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81707FC423477667008FE93F /* DiaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		81560BC12342911D0056F5E7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8167562F234392E5006F1249 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		81675631234393FB006F1249 /* CalendarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioViewController.swift; sourceTree = "<group>"; };
+		81707FC423477667008FE93F /* DiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaViewController.swift; sourceTree = "<group>"; };
 		DEAC298F7FCA86EC4F39755F /* Pods-Tempo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo.release.xcconfig"; path = "Target Support Files/Pods-Tempo/Pods-Tempo.release.xcconfig"; sourceTree = "<group>"; };
 		F10E9B24450FE2AD130CDB1C /* Pods-Tempo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo.debug.xcconfig"; path = "Target Support Files/Pods-Tempo/Pods-Tempo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 				81675631234393FB006F1249 /* CalendarioViewController.swift */,
 				812EB6C82346101700299153 /* CadatroViewController.swift */,
 				812EB6CA2346102500299153 /* UsuarioViewController.swift */,
+				81707FC423477667008FE93F /* DiaViewController.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				81675630234392E6006F1249 /* CollectionViewCell.swift in Sources */,
 				81560BAD23428CCA0056F5E7 /* AppDelegate.swift in Sources */,
 				812EB6C92346101700299153 /* CadatroViewController.swift in Sources */,
+				81707FC523477667008FE93F /* DiaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
