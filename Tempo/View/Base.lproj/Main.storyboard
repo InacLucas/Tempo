@@ -398,6 +398,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil" translatesAutoresizingMaskIntoConstraints="NO" id="NCR-9U-rAK">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="83" width="375" height="213"/>
                             </imageView>
 =======
@@ -418,6 +419,9 @@
                                 </connections>
                             </button>
 >>>>>>> master
+=======
+
+>>>>>>> 1090a85269c5af44f6e32bce180bc7e6b67c40ac
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSl-89-Q6F">
                                 <rect key="frame" x="77.5" y="349" width="220" height="38"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
